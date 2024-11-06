@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #81122e;
+    color: white;
+}
+
+header .logo h1 {
+    margin-left: 10px;
+}
+
+header .navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header .navbar ul li {
+    margin: 0 15px;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+     
+}
+
+
+main .content {
+    display: flex;
+    width: 100%;
+}
+
+main .main-content {
+    width: 70%;
+}
+
+main .sidebar {
+    width: 25%;
+    background-color: rgb(233, 212, 173);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .sidebar ul {
+    list-style-type: none;
+}
+
+main .sidebar ul li {
+    margin-bottom: 10px;
+}
+
+main .sidebar .search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+main .sidebar .search-bar input {
+    width: 80%;
+    padding: 10px;
+}
+
+main .sidebar .search-bar button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color:  #81122e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+footer .contact-info {
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    header .navbar ul.active {
+        display: flex;
+    }
+
+    header .navbar ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .hamburger-menu {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content {
+        flex-direction: column;
+    }
+
+    main .main-content {
+        width: 100%;
+    }
+
+    main .sidebar {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    main .sidebar {
+        display: none;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .contact-info {
+        display: none;
+    }
+}

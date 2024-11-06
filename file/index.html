@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <img style="height: 5pc; width: 5pc;" src="images/logo.png" alt="Telemedicine Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span>&#9776;</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="content" >
+            <section class="main-content">
+                <h2 style="color: rgb(235, 157, 55);">Welcome to TeleHealth</h2>
+                <p style="color: rgb(235, 157, 55);">Telemedicine offers healthcare at your fingertips. <br> 
+                    Consult with doctors remotely and get prescriptions from the comfort of your home.</p> <br> <br>
+                <h3 style="color:rgb(235, 157, 55);">How Telemedicine Works</h3>
+                <p style="color: rgb(235, 157, 55);">Our platform connects patients with healthcare professionals for online consultations. <br> All you need is an internet connection and a device with a camera.</p>
+            </section>
+
+            <aside class="sidebar">
+                <h3>Additional Links</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TeleHealth. All rights reserved.</p> <br>
+        <div class="social-links">
+            <a href="#">Facebook </a> <br>
+            <a href="#">Twitter</a> <br>
+            <a href="#">Instagram</a> <br>
+        </div>
+        <div class="contact-info">
+            <p>Contact us at: info@telehealth.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle the hamburger menu on mobile view
+        document.getElementById("hamburger-menu").addEventListener("click", function() {
+            var navbar = document.querySelector(".navbar ul");
+            navbar.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
